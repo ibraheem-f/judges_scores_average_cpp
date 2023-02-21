@@ -64,6 +64,7 @@ int main() {
         {
             std::cout << "Enter score 2: \n";
             std::cin >> score2;
+
             if(score2 >= 0 && score2 <= 10){
                 numOfScores = numOfScores + 1;
                 validScore2 = false;
@@ -87,6 +88,7 @@ int main() {
         {
             std::cout << "Enter score 4: \n";
             std::cin >> score4;
+
             if(score4 >= 0 && score4 <= 10){
                 numOfScores = numOfScores + 1;
                 validScore4 = false;
@@ -98,6 +100,7 @@ int main() {
         {
             std::cout << "Enter score 5: \n";
             std::cin >> score5;
+
             if(score5 >= 0 && score5 <= 10){
                 numOfScores = numOfScores + 1;
                 validScore5 = false;
@@ -114,7 +117,7 @@ int main() {
 
     float total = score1 + score2 + score3 + score4 + score5;
     total = total - lower - higher;
-    std::cout << "Total score: " << total << std::endl;
+    //std::cout << "Total score: " << total << std::endl;
     std::cout << "Score average: " << avgScore(total)<< std::endl;
 
     return 0;
